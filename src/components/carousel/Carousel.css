@@ -1,0 +1,18 @@
+.card {
+    @apply w-[190px] h-[254px] relative flex place-content-center place-items-center overflow-hidden rounded-[20px] before:content-[''] before:absolute before:w-[100px] before:bg-[linear-gradient(180deg,rgb(0,183,255),rgb(255,48,255))] before:h-[130%] before:animate-[rotBGimg_3s_linear_infinite] before:transition-all before:duration-[0.2s] before:ease-linear after:content-[''] after:absolute after:rounded-[15px] after:inset-[5px];
+    background: #07182e;
+  }
+  .card h2 {
+    @apply z-[1] text-[white] text-[2em];
+  }
+  @keyframes rotBGimg {
+    from {
+      @apply rotate-0;
+    }
+    to {
+      @apply rotate-[360deg];
+    }
+  }
+  .card::after {
+    background: #07182e;
+  }
